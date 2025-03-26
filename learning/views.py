@@ -101,5 +101,21 @@ def diffapply_summary(request):
     ]
     return render(request, 'learning/diffapply_def.html', {'image_list': image_list})
 
+def limit_test(request):
+    return render(request, 'learning/lim_test.html')
+
+def cont_test(request):
+    return render(request, 'learning/cont_test.html')
+
+def diff1_test(request):
+    return render(request, 'learning/diff1_test.html')
+
+def diff2_test(request):
+    return render(request, 'learning/diff2_test.html')
+
+def diffapply_test(request):
+    return render(request, 'learning/diffapply_test.html')
+
+
 def index(request):
     return render(request, 'learning/index.html')

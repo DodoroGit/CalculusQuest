@@ -46,6 +46,15 @@
       display: block;
     }
 
+    .back-home {
+      display: block;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #007bff;
+    }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -62,6 +71,7 @@
 
   <h1 class="title">極限重點整理</h1>
   <div class="container">
+    <a href="/" class="back-home">⬅ 回首頁</a>
     {% for img in image_list %}
       <div class="image-card">
         <img src="{{ img }}" alt="重點圖">

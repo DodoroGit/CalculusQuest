@@ -27,5 +27,10 @@ urlpatterns = [
     path('diff1/summary/', views.diff1_summary, name='diff1_summary'),
     path('diff2/summary/', views.diff2_summary, name='diff2_summary'),
     path('diffapply/summary/', views.diffapply_summary, name='diffapply_summary'),
+    path('limit/test/', views.limit_test, name='limit_test'),
+    path('cont/test/', views.cont_test, name='cont_test'),
+    path('diff1/test/', views.diff1_test, name='diff1_test'),
+    path('diff2/test/', views.diff2_test, name='diff2_test'),
+    path('diffapply/test/', views.diffapply_test, name='diffapply_test'),
     path('', views.index, name='index'),
 ]
