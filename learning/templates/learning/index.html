@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微積分學習首頁</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "DFKai-sb", sans-serif;
+      background: linear-gradient(to right, #e0f7ff, #ffffff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .menu-btn {
+      display: block;
+      padding: 1rem;
+      font-size: 1.2rem;
+      background-color: #ffffff;
+      border: 2px solid #3498db;
+      border-radius: 12px;
+      color: #3498db;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-btn:hover {
+      background-color: #3498db;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .section-title {
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>微積分學習系統</h1>
+
+  <div class="section-title">🔍 重點整理</div>
+  <div class="button-grid">
+    <a href="/limit/summary/" class="menu-btn">極限重點整理</a>
+    <a href="/cont/summary/" class="menu-btn">連續重點整理</a>
+    <a href="/diff1/summary/" class="menu-btn">微分一重點整理</a>
+    <a href="/diff2/summary/" class="menu-btn">微分二重點整理</a>
+    <a href="/diffapply/summary/" class="menu-btn">微分應用重點整理</a>
+  </div>
+
+  <div class="section-title">📝 測驗區（開發中）</div>
+  <div class="button-grid">
+    <a href="/limit/test/" class="menu-btn">極限測驗</a>
+    <a href="/cont/test/" class="menu-btn">連續測驗</a>
+    <a href="/diff1/test/" class="menu-btn">微分一測驗</a>
+    <a href="/diff2/test/" class="menu-btn">微分二測驗</a>
+    <a href="/diffapply/test/" class="menu-btn">微分應用測驗</a>
+  </div>
+
+</body>
+</html>
