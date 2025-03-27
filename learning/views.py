@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.templatetags.static import static
+
 
 # Create your views here.
 
@@ -83,22 +85,37 @@ def diff2_summary(request):
 
 def diffapply_summary(request):
     image_list = [
-        "https://i.imgur.com/FRRCE8g.png",
-        "https://i.imgur.com/hOxLNZZ.png",
-        "https://i.imgur.com/91ukfOY.png",
-        "https://i.imgur.com/nXrYoB7.png",
-        "https://i.imgur.com/X3EY0Eq.png",
-        "https://i.imgur.com/hM3OTgz.png",
-        "https://i.imgur.com/fdGpSxv.png",
-        "https://i.imgur.com/UpzYDUh.png",
-        "https://i.imgur.com/3ZEDdJW.png",
-        "https://i.imgur.com/hVoJvS1.png",
-        "https://i.imgur.com/zz9KRSg.png",
-        "https://i.imgur.com/MnAB17p.png",
-        "https://i.imgur.com/Cm7wnyQ.png",
-        "https://i.imgur.com/yHbyRCU.png",
-        "https://i.imgur.com/5UoQNz5.png",
+        'learning/images/diffapply_def_1.png',
+        'learning/images/diffapply_def_2.png',
+        'learning/images/diffapply_def_3.png',
+        'learning/images/diffapply_def_4.png',
+        'learning/images/diffapply_def_5.png',
+        'learning/images/diffapply_def_6.png',
+        'learning/images/diffapply_def_7.png',
+        'learning/images/diffapply_def_8.png',
+        'learning/images/diffapply_def_9.png',
+        'learning/images/diffapply_def_10.png',
+        'learning/images/diffapply_def_11.png',
+        'learning/images/diffapply_def_12.png',
+        'learning/images/diffapply_def_13.png',
+        'learning/images/diffapply_def_14.png',
+        'learning/images/diffapply_def_15.png',
+        'learning/images/diffapply_def_16.png',
+        'learning/images/diffapply_def_17.png',
+        'learning/images/diffapply_def_18.png',
+        'learning/images/diffapply_def_19.png',
+        'learning/images/diffapply_def_20.png',
+        'learning/images/diffapply_def_21.png',
+        'learning/images/diffapply_def_22.png',
+        'learning/images/diffapply_def_23.png',
+        'learning/images/diffapply_def_24.png',
+        'learning/images/diffapply_def_25.png',
+        'learning/images/diffapply_def_26.png',
+        'learning/images/diffapply_def_27.png',
+        'learning/images/diffapply_def_28.png',
+ 
     ]
+
     return render(request, 'learning/diffapply_def.html', {'image_list': image_list})
 
 def limit_test(request):
@@ -114,7 +131,43 @@ def diff2_test(request):
     return render(request, 'learning/diff2_test.html')
 
 def diffapply_test(request):
-    return render(request, 'learning/diffapply_test.html')
+    image_list = [
+        {
+            'image': 'https://i.imgur.com/D4QjUi0.png',
+            'hint': static('learning/images/Hint1.png')
+        },
+        {
+            'image': 'https://i.imgur.com/08ml33O.png',
+            'hint': static('learning/images/Hint2.png')
+        },
+        {
+            'image': 'https://i.imgur.com/qD2AJtV.png',
+            'hint': static('learning/images/Hint3.png')
+        },
+        {
+            'image': 'https://i.imgur.com/JhCKPKy.png',
+            'hint': static('learning/images/Hint4.png')
+        },
+        {
+            'image': 'https://i.imgur.com/QkVSqd4.png',
+            'hint': static('learning/images/Hint5.png')
+        },
+        {
+            'image': 'https://i.imgur.com/3Yrr18e.png',
+            'hint': static('learning/images/Hint6.png')
+        },
+        {
+            'image': 'https://i.imgur.com/teyVIqd.png',
+            'hint': static('learning/images/Hint7.png')
+        },
+        {
+            'image': 'https://i.imgur.com/4gKJ1ZL.png',
+            'hint': static('learning/images/Hint8.png')
+        },
+    ]
+
+
+    return render(request, 'learning/diffapply_test.html', {'image_list': image_list})
 
 
 def index(request):

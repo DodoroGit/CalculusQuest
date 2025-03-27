@@ -1,12 +1,12 @@
 const questions = [
-    { title: "第1題", image: "https://i.imgur.com/D4QjUi0.png", options: ["1/4", "0", "0或1/4", "以上皆非"], answer: "0或1/4", hint: "https://i.imgur.com/yaSu1zq.png" },
-    { title: "第2題", image: "https://i.imgur.com/08ml33O.png", options: ["π", "π/6", "5π/6", "以上皆是"], answer: "5π/6", hint: "https://i.imgur.com/YQhl7mx.png" },
-    { title: "第3題", image: "https://i.imgur.com/qD2AJtV.png", options: ["(A)", "(B)", "(C)", "(D)"], answer: "(B)", hint: "https://i.imgur.com/EzUisMS.png" },
-    { title: "第4題", image: "https://i.imgur.com/JhCKPKy.png", options: ["[-2,2]", "[2,0)", "(-2,2)", "(0,2)"], answer: "(-2,2)", hint: "https://i.imgur.com/YQhl7mx.png" },
-    { title: "第5題", image: "https://i.imgur.com/QkVSqd4.png", options: ["-1/2", "-8/3", "-1", "-2"], answer: "-8/3", hint: "https://i.imgur.com/u5jwz4n.png" },
-    { title: "第6題", image: "https://i.imgur.com/3Yrr18e.png", options: ["2", "3", "4", "以上皆非"], answer: "3", hint: "https://i.imgur.com/tWu3FKq.png" },
-    { title: "第7題", image: "https://i.imgur.com/teyVIqd.png", options: ["6", "3", "9", "12"], answer: "9", hint: "https://i.imgur.com/EzUisMS.png" },
-    { title: "第8題", image: "https://i.imgur.com/4gKJ1ZL.png", options: ["最小值", "最大值", "無最大值也無最小值", "以上皆非"], answer: "最大值", hint: "https://i.imgur.com/yaSu1zq.png" }
+    { title: "第1題", image: "https://i.imgur.com/D4QjUi0.png", options: ["1/4", "0", "0或1/4", "以上皆非"],                   answer: "0或1/4", hint: "learning/images/Hint1.png" },
+    { title: "第2題", image: "https://i.imgur.com/08ml33O.png", options: ["π", "π/6", "5π/6", "以上皆是"],                     answer: "5π/6", hint: "learning/images/Hint2.png" },
+    { title: "第3題", image: "https://i.imgur.com/qD2AJtV.png", options: ["(A)", "(B)", "(C)", "(D)"],                         answer: "(B)", hint: "learning/images/Hint3.png" },
+    { title: "第4題", image: "https://i.imgur.com/JhCKPKy.png", options: ["[-2,2]", "[2,0)", "(-2,2)", "(0,2)"],               answer: "(-2,2)", hint: "learning/images/Hint4.png" },
+    { title: "第5題", image: "https://i.imgur.com/QkVSqd4.png", options: ["-1/2", "-8/3", "-1", "-2"],                         answer: "-8/3", hint: "learning/images/Hint5.png" },
+    { title: "第6題", image: "https://i.imgur.com/3Yrr18e.png", options: ["2", "3", "4", "以上皆非"],                          answer: "3", hint: "learning/images/Hint6.png" },
+    { title: "第7題", image: "https://i.imgur.com/teyVIqd.png", options: ["6", "3", "9", "12"],                                answer: "9", hint: "learning/images/Hint7.png" },
+    { title: "第8題", image: "https://i.imgur.com/4gKJ1ZL.png", options: ["最小值", "最大值", "無最大值也無最小值", "以上皆非"], answer: "最大值", hint: "learning/images/Hint8.png" }
 ];
 
 
