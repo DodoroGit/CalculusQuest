@@ -13,7 +13,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: SSH and Deploy to EC2
+    - name: SSH and Deploy to EC2 (No Virtual Environment)
       env:
         PRIVATE_KEY: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
         HOST: ${{ secrets.EC2_HOST }}
@@ -23,11 +23,19 @@ jobs:
         chmod 600 calculusquestsecret.pem
         ssh -o StrictHostKeyChecking=no -i calculusquestsecret.pem $USER@$HOST << 'EOF'
           cd /home/$USER/CalculusQuest
+          echo "✅ 拉取最新程式碼..."
           git pull origin main
-          source /home/$USER/.venv/bin/activate
-          pip install -r requirements.txt
+
+          echo "✅ 安裝 Python 依賴項..."
+          pip3 install --user -r requirements.txt
+
+          echo "✅ 執行資料庫遷移..."
           python3 manage.py migrate
-          sudo systemctl restart django
+
+          echo "✅ 重新啟動 Django 服務..."
+          sudo systemctl restart django.service || echo "⚠️ Django 服務重啟失敗，請檢查服務設定。"
+
+          echo "🚀 部署完成！"
         EOF
 
     - name: Cleanup Private Key
